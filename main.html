@@ -1,0 +1,132 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portofoilo</title>
+</head>
+<style>
+    body {
+        background-color: palegoldenrod;
+        color: #222;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .main {
+        background-color: white;
+        border-radius: 15px;
+        margin: auto;
+        width: 35vw;
+        height: 35vw;
+        margin-top: 10vh;
+        text-align: center;
+        box-shadow: 1px 30px black;
+        border-radius: 50%;
+        border: 7px solid black;
+        transition-duration: 200ms;
+        animation: floatingfeel 3s infinite, fadestart 2.5s, rotatingfeelmain 1s;
+
+    }
+    .main:hover {
+        transition-duration: 200ms;
+        box-shadow: none;
+        border: 3px solid black;
+    }
+    .pfp {
+        width: 98%;
+        height: 50%;
+        border-radius: 90%;
+        margin-top: 2vh;
+        transition-duration: 200ms;
+    }
+    .pfp:hover {
+        transition-duration: 200ms;
+        opacity: 1;
+        width:  100%;
+        height: 53%;
+    }
+    .textunderneathpfp {
+        color: #222;
+        transition-duration: 250ms;
+        margin-top: 40px;
+    }
+    .textunderneathpfp:hover {
+        font-size: 35px;
+        transition-duration: 200ms;
+    }
+    .textunderneathpfp2 {
+        color:#222;
+        font-size: 20px;
+    }
+    @keyframes fadestart {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+    .floatingitem1 {
+        width: 100px;
+        height: 100px;
+        top: 0px;
+        right: 0px;
+        animation: floatingfeel 3s infinite;
+    }
+    .normalbutton {
+        display: inline-block;
+        border-radius: 20px;
+        background-color: #222;
+        width: 30%;
+        transition-duration: 200ms;
+        height: 10%;
+        text-align: center;
+        align-self: center;
+        text-decoration: none;
+        color: #222;
+        margin-top: 15px;
+    }
+    .insidebutton {
+        text-decoration: none;
+        color: #222;
+        position: absolute;
+        font-size: 10px;
+    }
+    .normalbutton:hover {
+        transition-duration: 250ms;
+        width: 31%;
+        height: 11%;
+    }
+    @keyframes rotatingfeelmain {
+        0% {
+            rotate: 0deg;
+        }
+        25% {
+            rotate: -6deg;
+        }
+        75% {
+            rotate: 6deg;
+        }
+        100% {
+            rotate: 0deg;
+        }
+    }
+    @keyframes floatingfeel {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-15px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+</style>
+<body>
+
+
+    <div class="main">
+        <img src="actual.png" class="pfp"></img>
+        <p>status: at school</p>
+        <h1 class="textunderneathpfp">hey, I'm yassin!</h1>
+        <p class="textunderneathpfp2">I'm a 13 years old <u>various</u> artist, web developer and a  <br>student at: <a class="textunderneathpfp2" href="https://www.google.com/maps/place/Abou+Baker+El+Seddik+Preparatory+School+for+Boys/@25.2662233,51.518018,17z/data=!3m1!4b1!4m6!3m5!1s0x3e45c55159555555:0x2bd8002424162fd3!8m2!3d25.2662233!4d51.5205929!16s%2Fg%2F11cn3q7svg?entry=ttu&g_ep=EgoyMDI0MDkxOC4xIKXMDSoASAFQAw%3D%3D">Abu Bakr Asdeeq Prepatory School.</a> <br> I do also love rollerblading! </p>
+    </div>
+
+</body>
+</html>
